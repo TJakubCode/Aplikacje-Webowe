@@ -2,9 +2,8 @@
 <html lang="en">
   <style>
     .container {
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-template-rows: repeat(2, 100px);
+      display: flex;
+      margin-bottom: 10px;
       gap: 10px;
     }
     .box {
@@ -20,10 +19,9 @@
   <body>
     <div class="container">
       <div class="box" style="background-color: blue"></div>
-      <div
-        class="box"
-        style="background-color: aqua; grid-column: span 2"
-      ></div>
+      <div class="box" style="background-color: aqua"></div>
+    </div>
+    <div class="container">
       <div class="box" style="background-color: rgb(242, 255, 0)"></div>
       <img
         class="box"
