@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <style></style>
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Story+Script&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
 
@@ -13,32 +12,119 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-
+ 
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moja strona internetowa</title>
+    <title>Strona główna</title>
 
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="top-bar">
-      <h6 id="top-title">Hodowla kotów Mruczek</h6>
+    <header class="top-bar">
+      <h1 id="top-title">
+        <img id="logo" src="cat-svgrepo-com.svg">
+        Hodowla kotów Mruczek.pl
+      </h1>
       <h2 id="title-addnot">Koty syberyjskie</h2>
-    </div>
+    </header>
 
-    <div id="menu-bar">
-      <input class="search" type="search" placeholder="Search..." />
-      <div class="material-symbols-outlined icon">home</div>
-      <div class="material-symbols-outlined icon">menu</div>
-    </div>
-    <img
-      id="top-img"
-      src="https://cat-world.com/wp-content/uploads/2017/06/silver-siberian.jpg"
-    />
-    <div class="info">
-      <img
-        src="https://images.squarespace-cdn.com/content/v1/59ed36e290bcce875ffd492a/1555967815831-RD81XHI18VTVGBXKOBXH/fullsizeoutput_4529.jpeg"
-      />
-    </div>
+    <nav id="menu-bar">
+      <a href="index.html" class="icon">
+        <div class = "icon-name">Strona główna</div>
+        <div class="material-symbols-outlined">home</div>
+      </a>
+      <a href="gallery.html" class="icon">
+        <div class = "icon-name">Galeria</div>
+        <div class="material-symbols-outlined">photo</div>
+      </a>
+      <a href="contact.html" class="icon">
+        <div class = "icon-name">Kontakt</div>
+        <div class="material-symbols-outlined">phone</div>
+      </a>
+    </nav>
+
+    <main>
+      <section id="top-image">
+        <div id="slide-image-container"></div>
+          <div id="slide-dots"></div>
+      </section>
+      <section id="top-info">
+        <h1>O nas...</h1>
+        <section id="about-us">
+          <article class="article">
+            <h2>Jesteśmy profesjonalna hodowlą</h2>
+            <p>Jesteśmy legalnie działającą hodowlą, zarejestrowaną w FPL (Felis Polonia)
+              pod auspicjami FIFe lub WCF, TICA. Działamy zgodnie z najwyższymi standardami etycznymi. 
+              Wszystkie nasze kocie dzieci otrzymują rodowody WCF, które potwierdzają ich rasowość i są 
+              respektowane na całym świecie. Wszystko po to, aby kocięta naszą hodowlę opuszczały zdrowe,
+              idealne do wzorca i standardu rasy, radosne.
+              Nie tylko po to, by mogły osiągać sukcesy wystawowe!
+              Przede wszystkim po to, aby przez długie lata dawały radość i dumę swoim opiekunom.</p>
+            </article>
+            <article class="article">
+              <h2>Jesteśmy miłośnikami kotów</h2>
+              <p>Nasza przygoda z kotami syberyjskimi rozpoczęła się 3 pokolenia wstecz, gdy mój pradziadek
+                w trakcie podróży dookoła świata napotkał rasę kota niepodobną do żadnej innej. Zafascynowany dzikim wyglądem i łagodnym sercem
+                kotów syberyjskich postanowił poświęcić swoje życie ich hodowli. Jego skromne początki pozwoliły nam dziś stać się jedną
+                z najbardziej prestiżowych domów kotów w Polsce. Jako jego potomkowie kontynuujemy jego tradycję i z radością poświęcamy swój
+                czas i energię na doskonalenie tej rasy, dbając o jej najlepsze cechy.</p>
+            </article>
+          </section>
+      </section>
+      <section class="info">
+        <article id="main-content">
+          <h1>Historia kotów syberyjskich</h1>
+          <p>Jest to rasa kota, która powstała w sposób całkowicie naturalny, bez pomocy człowieka. Początkowo koty te żyły dziko i
+            uważano je za zwykłe dachowce, które towarzyszyły ludziom mieszkającym w Rosji. Prowadzenie tam hodowli nie było zbyt
+            powszechne, a przez pewien czas było też zakazane. Zmiany nastąpiły dopiero w latach 80. XX wieku. Otwarcie granic
+            sprawiło, że ten rosyjski kot zyskał na sławie.
+            
+            Początkowo określano te koty jako „kot syberyjski leśny”, ale w 1991 roku usunięto słowo „leśny”. Mimo to dalej można
+            spotkać się z określeniami takimi jak: „Siberian Forest Cat”, chociaż stosuje się też „Siberian Cat” oraz Siberian”. W
+            przeciągu paru lat rasę uznały organizacje takie jak WCF (World Cat Federation) oraz FIFe (Federation Internationale
+            Feline). Dzisiaj hoduje się te koty w różnych zakątkach świata.
+            
+            Przez pewien czas istniał kot syberyjski neva masquerade, ale w 2010 roku wyodrębniono z tego nową rasę: neva
+            masquerade. W tej siostrzanej rasie dopuszczalne są tylko niebieskie oczy (różne odcienie, ale im ciemniejsze oczy, tym
+            lepsze) oraz znakowanie typu point (ogon, łapy, uszy i pyszczek są ciemniejsze). Do powstania tej rasy
+            najprawdopodobniej przyczynił się kot syjamski, który został skrzyżowany z kotem syberyjskim.
+          </p>
+        </article>
+        
+        <article id="main-content"><h1>Charakter kotów syberyjskich</h1>
+          <p>
+            Jaki jest charakter kota syberyjskiego? Jest to przede wszystkim kot ciekawski. Uwielbia wchodzić w każdy mały kąt i
+            badać nowe rzeczy. Jest również inteligentny. Kocięta tej rasy potrzebują większej uwagi ze strony właściciela. Ważne
+            jest ich wczesne wychowanie, bo gdy ten mały rosyjski kot dorośnie, staje się uparty.
+            
+            Zarówno kocięta, jak i starsze osobniki, uwielbiają się wspinać. Wysokie półki nie stanowią dla nich żadnego problemu.
+            Jest to kot aktywny i łowny. Kot syberyjski lubi także świeże powietrze, dlatego można wyprowadzać go na spacer. Jeśli
+            jest to możliwe, to dobrym rozwiązaniem jest zrobienie dla niego woliery na ogrodzie.
+          </p>
+        </article>
+        
+        <article id="main-content">
+          <h1>Wygląd kotów syberyjskich</h1>
+          <article id="cat-looks">
+            <p>Czarno-biały, rudy czy biały – jak wygląda kot syberyjski?
+            Jest to kot długowłosy o średnich rozmiarach. Nie występuje w odmianie, w której byłby krótkowłosy. Kocur może ważyć
+            około 7 kg, choć zdarza się, że koty tej rasy osiągają wielkość nawet do 12 kg. Kotki są mniejsze, a ich waga wynosi
+            około 4-6 kg.
+            Kolor kota syberyjskiego może być:
+            </p>
+            <ol>
+                <li>czarny</li>
+                <li>niebieski</li>
+                <li>kremowy</li>
+                <li>niebieski szylkret</li>
+                <li>czarny szylkret</li>
+            </ol>
+          </article>
+      </article>
+      </section>
+    </main>
+    <footer>Jakub Turek</footer>
+    <script src="index.js"></script>
   </body>
 </html>

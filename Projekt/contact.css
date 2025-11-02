@@ -1,0 +1,43 @@
+main{
+    padding-top: min(15vw, 177px);
+    min-height: calc(100vh - min(15vw, 177px) - 29px);
+    justify-content: flex-start;
+    row-gap: 10px;
+}
+
+#form{
+    width: 95%;
+    background-color: #b18b8ba6;
+    color: white;
+    font-size:24px;
+    font-family: "Google Sans Code";
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding: 20px 20px 100px 20px;
+    border-radius: 6px;
+}
+
+#form h1{
+    font-family: "Story Script";
+}
+
+.form-input{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.form-input input{
+    height: 24px;
+    width: clamp(50px,20vw,200px);
+    align-items: center;
+    font-family: "Google Sans Code";
+}
+
+.form-input select{
+    text-align: center;
+    width: clamp(50px,20vw,200px);
+}
