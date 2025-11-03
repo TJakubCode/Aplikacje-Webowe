@@ -91,6 +91,7 @@ footer{
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+
 .icon-name{
   flex-basis: 60%;
   padding-top: min(7px,0.5vw);
@@ -123,6 +124,27 @@ footer{
   overflow: hidden;
   position: relative;
   margin-top: -25%;
+}
+
+#chevron-container{
+  position: absolute;
+  top: 65%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: max(5%,19px);
+}
+
+#chevron{
+  display: flex;
+  flex-basis: max(3%,23px);
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff78;
+  border-radius: 8px;
+  z-index: 1;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #slide-image-container{
@@ -262,13 +284,13 @@ footer{
   flex-direction: column;
   align-items: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
   url("https://cat-world.com/wp-content/uploads/2017/06/siberian-cat-1.jpg");
   background-clip: border-box border-box;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   margin: 100px 100px 100px 100px;
   border-radius: 6px;
 }

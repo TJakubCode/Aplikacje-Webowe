@@ -39,5 +39,5 @@ main{
 
 .form-input select{
     text-align: center;
-    width: clamp(50px,20vw,200px);
+    width: clamp(50px,20vw,250px);
 }
