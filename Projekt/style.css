@@ -3,7 +3,7 @@
   padding: 0px 0px 0px 0px;
 }
 html,
-body{
+body {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to top, #362013, #000000);
@@ -13,15 +13,15 @@ body{
   min-height: 100vh;
 }
 
-main{
-  width:100%;
+main {
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.top-bar{
+.top-bar {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -30,24 +30,24 @@ main{
   height: min(13vw, 125px);
   width: 100%;
   font-family: "Story Script", sans-serif;
-  color: #A87C7C;
+  color: #a87c7c;
   background-color: rgba(0, 0, 0, 0.5);
   background-clip: initial;
   padding-top: 0px;
-  z-index: 1;
+  z-index: 2;
   transition: background-color 1s ease-in-out;
 }
 
-.top-bar.scrolled{
+.top-bar.scrolled {
   background-color: rgba(0, 0, 0, 1);
 }
 
-footer{
+footer {
   text-align: center;
-  width:100%;
+  width: 100%;
   font-family: "Story Script", sans-serif;
   font-size: 22px;
-  color: #A87C7C;
+  color: #a87c7c;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -57,7 +57,7 @@ footer{
   height: 40%;
 }
 
-#logo{
+#logo {
   height: 100%;
 }
 
@@ -67,7 +67,7 @@ footer{
 }
 
 #menu-bar {
-  margin-top: min(0.4%,4px);
+  margin-top: min(0.4%, 4px);
   width: 30vw;
   height: min(12vw, 120px);
   position: fixed;
@@ -82,7 +82,8 @@ footer{
   text-decoration: none;
   color: rgb(0, 0, 0);
   display: flex;
-  justify-content:center;
+  justify-content: center;
+  align-items: center;
   column-gap: 30px;
   text-align: center;
   height: min(4vw, 34px);
@@ -91,13 +92,11 @@ footer{
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-
-.icon-name{
+.icon-name {
   flex-basis: 60%;
-  padding-top: min(7px,0.5vw);
-  font-size: min(16px,2vw);
+  padding-top: min(7px, 0.5vw);
+  font-size: min(16px, 2vw);
   font-family: "Google Sans Code";
-  
 }
 
 .material-symbols-outlined {
@@ -105,39 +104,30 @@ footer{
   font-size: clamp(13px, 3vw, 34px);
 }
 
-@media (max-width: 1000px) {
-  #top-title {
-    font-size: clamp(20px, 6vw, 90px);
-  }
-  #title-addnot {
-    font-size: clamp(6px, 3vw, 30px);
-  }
-}
-
 .icon:hover {
   background-color: rgba(47, 47, 47, 0.5);
   color: white;
 }
 
-#top-image{
-  width: 100%;
+#top-image {
+  width: 95%;
   overflow: hidden;
   position: relative;
   margin-top: -25%;
 }
 
-#chevron-container{
+#chevron-container {
   position: absolute;
   top: 65%;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: max(5%,19px);
+  height: max(5%, 21px);
 }
 
-#chevron{
+.chevron {
   display: flex;
-  flex-basis: max(3%,23px);
+  flex-basis: max(2.5%, 24px);
   align-items: center;
   justify-content: center;
   background-color: #ffffff78;
@@ -145,19 +135,24 @@ footer{
   z-index: 1;
   margin-left: 10px;
   margin-right: 10px;
+  user-select: none;
 }
 
-#slide-image-container{
+.chevron:hover {
+  background-color: #74747478;
+  cursor: pointer;
+}
+
+#slide-image-container {
   display: flex;
   justify-content: flex-start;
   transition: transform 0.5s ease-in-out;
   overflow: hidden;
-  
 }
 
-#slide-image-container img{
-  object-fit: cover;
-  transform: translateY(15%);
+#slide-image-container img {
+  object-fit: contain;
+  transform: translateY(20%);
 }
 
 #slide-dots {
@@ -166,7 +161,7 @@ footer{
   bottom: 15px;
   left: 48%;
   gap: 10px;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .dot {
@@ -186,7 +181,7 @@ footer{
   background-color: rgb(234, 234, 234);
 }
 
-#top-info{
+#top-info {
   text-align: center;
   width: 100%;
   margin-top: 5%;
@@ -194,40 +189,39 @@ footer{
   color: rgb(255, 255, 255);
 }
 
-#top-info h1{
+#top-info h1 {
   font-size: 34px;
   padding-bottom: 3%;
 }
 
-#about-us{
+#about-us {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 40px;
 }
 
-#about-us img{
-  flex-basis:100%;
-  width:200px;
+#about-us img {
+  flex-basis: 100%;
+  width: 200px;
   object-fit: cover;
 }
 
-#about-us p{
-  width:75%;
+#about-us p {
+  width: 75%;
 }
 
-.article{
+.article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: max(306px,45%);
-  background-color: rgba(126, 99, 99,0.5);
+  flex-basis: max(306px, 45%);
+  background-color: rgba(126, 99, 99, 0.5);
   border-radius: 10px;
   padding: 5px 5px 5px 5px;
 }
 
-
-#main-content{
+#main-content {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -236,19 +230,19 @@ footer{
   color: white;
   row-gap: 20px;
   max-width: 1400px;
-  padding-top:200px;
+  padding-top: 200px;
   padding-bottom: 100px;
 }
 
-#main-content h1{
+#main-content h1 {
   background-color: #dbb1b182;
   border-radius: 6px;
   text-align: center;
-  width:100%;
+  width: 100%;
   font-size: 48px;
 }
 
-#main-content > p{
+#main-content > p {
   background-color: #46373783;
   font-family: "Google Sans Code";
   text-align: center;
@@ -257,7 +251,7 @@ footer{
   padding: 20px 20px 20px 20px;
 }
 
-#cat-looks{
+#cat-looks {
   background-color: #46373783;
   color: white;
   list-style-position: inside;
@@ -268,24 +262,24 @@ footer{
   flex-direction: column;
 }
 
-#cat-looks p{
+#cat-looks p {
   font-family: "Google Sans Code";
   text-align: center;
   padding: 20px 20px 5px 20px;
 }
 
-#cat-looks ol{
+#cat-looks ol {
   align-self: center;
 }
 
-.info{
+.info {
   width: 95vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-  url("https://cat-world.com/wp-content/uploads/2017/06/siberian-cat-1.jpg");
+    url("https://cat-world.com/wp-content/uploads/2017/06/siberian-cat-1.jpg");
   background-clip: border-box border-box;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -293,4 +287,25 @@ footer{
   background-size: contain;
   margin: 100px 100px 100px 100px;
   border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .info {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  #top-title {
+    font-size: clamp(20px, 6vw, 90px);
+  }
+  #title-addnot {
+    font-size: clamp(6px, 3vw, 30px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .info {
+    background-size: cover;
+  }
 }
