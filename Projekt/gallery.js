@@ -20,3 +20,14 @@ catsButton.addEventListener('click',() =>{
 
 catsImages.style.display = 'none';
 kittensButton.classList.add('active')
+
+
+const topBar = document.querySelector(".top-bar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    topBar.classList.add("scrolled");
+  } else {
+    topBar.classList.remove("scrolled");
+  }
+});

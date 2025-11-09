@@ -19,6 +19,7 @@ main {
   height: max(4vw, 66px);
   background-color: rgba(165, 121, 121, 0.448);
   flex-shrink: 0;
+  margin-bottom:100px;
 }
 
 #photos-choose button {
@@ -46,7 +47,7 @@ main {
 }
 
 .gallery-flex {
-  width: min(75vw, 1500px);
+  width: min(95vw, 1500px);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -59,12 +60,14 @@ main {
 
 .gallery-flex img {
   border-radius: 20px;
+  border-color:#634c4c;
+  border-style: solid;
   width: 33.33%;
 }
 
 .gallery-grid {
   position: relative;
-  width: min(75vw, 1500px);
+  width: min(95vw, 1500px);
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
   gap: 15px 5%;
@@ -72,5 +75,21 @@ main {
 
 .gallery-grid img {
   border-radius: 20px;
+  border-color:#634c4c;
+  border-style: solid;
   width: 100%;
+}
+
+video{
+  margin-bottom:20px;
+  border-radius: 20px;
+  border-color:#634c4c;
+  border-style: solid;
+  width: 70%;
+  max-width: 1200px;
+}
+
+#video-title{
+  font-size: min(42px,4vw);
+  margin-top: min(10vw,100px);
 }

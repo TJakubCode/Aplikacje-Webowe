@@ -44,3 +44,14 @@ form.addEventListener("submit", (event) => {
 
   if (isCorrect) form.submit();
 });
+
+
+const topBar = document.querySelector(".top-bar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    topBar.classList.add("scrolled");
+  } else {
+    topBar.classList.remove("scrolled");
+  }
+});

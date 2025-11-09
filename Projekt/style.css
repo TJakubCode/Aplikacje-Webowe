@@ -94,7 +94,6 @@ footer {
 
 .icon-name {
   flex-basis: 60%;
-  padding-top: min(7px, 0.5vw);
   font-size: min(16px, 2vw);
   font-family: "Google Sans Code";
 }
@@ -221,7 +220,7 @@ footer {
   padding: 5px 5px 5px 5px;
 }
 
-#main-content {
+.main-content {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -230,11 +229,11 @@ footer {
   color: white;
   row-gap: 20px;
   max-width: 1400px;
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: min(200px,17vw);
 }
 
-#main-content h1 {
+
+.main-content h1 {
   background-color: #dbb1b182;
   border-radius: 6px;
   text-align: center;
@@ -242,7 +241,7 @@ footer {
   font-size: 48px;
 }
 
-#main-content > p {
+.main-content > p {
   background-color: #46373783;
   font-family: "Google Sans Code";
   text-align: center;
@@ -270,6 +269,7 @@ footer {
 
 #cat-looks ol {
   align-self: center;
+  padding-bottom: 10px;
 }
 
 .info {
@@ -286,7 +286,98 @@ footer {
   background-position: center;
   background-size: contain;
   margin: 100px 100px 100px 100px;
+  padding-bottom: 100px;
   border-radius: 6px;
+}
+
+.single-element{
+    display: flex;
+    flex-direction: column;
+    font-family: "Story Script";
+    align-items: center;
+    color: white;
+    row-gap: 20px;
+    max-width: 1400px;
+    width:95vw;
+    border-radius: 6px;
+    margin-top: min(50px,20vw);
+    margin-bottom: 20px;
+}
+
+.single-element h1 {
+  background-color: #dbb1b182;
+  border-radius: 6px;
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+}
+
+.row-element{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+}
+
+.row-element p{
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-family: "Google Sans Code";
+  border-radius: 6px;
+  padding-bottom: 25px;
+}
+
+.row-element h2{
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  font-family: "Google Sans Code";
+  border-radius: 6px;
+}
+
+#maps{
+    border-radius: 6px;
+    flex-basis: 600px;
+    flex-grow:1;
+    min-width: 0;
+    flex-shrink: 1;
+    border: #dbb1b182 solid;
+    object-fit:contain;
+}
+
+#gallery-cat{
+    border-radius: 6px;
+    flex-basis: 520px;
+    flex-grow:1;
+    min-width: 0;
+    flex-shrink: 1;
+    border: #dbb1b182 solid;
+    object-fit:contain;
+}
+
+#gallery-container{
+  background-color: #a87c7c44;
+  flex-basis:500px;
+  flex-grow: 1;
+}
+
+
+#contact{
+  display: flex;
+  flex-grow:1;
+  flex-basis: 400px;
+  background-color: #a87c7c44;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+
+#contact-footer{
+  background-color: #b1848480;
+  width:100vw;
+  font-family: "Story Script";
+  color: white;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
@@ -307,5 +398,12 @@ footer {
 @media (max-width: 1100px) {
   .info {
     background-size: cover;
+  }
+}
+
+@media (max-width: 1700px) {
+  .single-element{
+     margin-left: 0px !important;
+    margin-right: 0px!important;
   }
 }
