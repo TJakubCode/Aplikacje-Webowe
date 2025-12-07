@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Story+Script&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <h1 id="top-title">
+        <img id="logo" src="cat-svgrepo-com.svg" />
+        Hodowla kotów Mruczek.pl
+      </h1>
+      <h2 id="title-addnot">Koty syberyjskie</h2>
+    </header>
+
+    <nav id="menu-bar">
+      <a href="index.html" class="icon">
+        <div class="icon-name">Strona główna</div>
+        <div class="material-symbols-outlined">home</div>
+      </a>
+      <a href="gallery.html" class="icon">
+        <div class="icon-name">Galeria</div>
+        <div class="material-symbols-outlined">photo</div>
+      </a>
+      <a href="contact.html" class="icon">
+        <div class="icon-name">Kontakt</div>
+        <div class="material-symbols-outlined">phone</div>
+      </a>
+    </nav>
+
+    <main>
+      <form>
+        <h1>Formularz kontaktowy</h1>
+        <div class="form-input">
+          <label for="text">Podaj adres e-mail: </label>
+          <input id="email" type="text" placeholder="email@website.country" />
+          <div class="error-message" id="email-error">
+            Wpisz prawidłowy email!!!
+          </div>
+        </div>
+
+        <div class="form-input">
+          <label for="topic">Temat wiadomości:</label>
+          <select id="topic">
+            <option value="" hidden selected>Wybierz temat</option>
+            <option value="question">Pytanie dotyczące naszych kotów</option>
+            <option value="collab">Rezerwacja naszego kota</option>
+            <option value_="issue">Umówienie wizyty</option>
+            <option value="inne">Inne</option>
+          </select>
+          <div class="error-message" id="topic-error">Wybierz temat!!!</div>
+        </div>
+        <div class="form-input">
+          <label for="text-area">Wiadomość: </label>
+          <textarea
+            id="text-area"
+            placeholder="Tutaj wpisz swoją wiadomość..."
+          ></textarea>
+          <div class="error-message" id="error-text">Wpisz wiadomość!!!</div>
+        </div>
+        <input id="submit-form" type="submit" value="WYŚLIJ" />
+      </form>
+    </main>
+    <section id="contact-footer">
+        <div>
+            <h2>Nasz nr telefonu: 555-123-456</h2>
+            <h2>E-mail: mruczek@wp.pl</h2>
+            <h2>Adres: Kraków ul. Krzemowa 23</h2>
+          </div>
+    </section>
+    <footer>Jakub Turek</footer>
+    <script src="contact.js"></script>
+  </body>
+</html>

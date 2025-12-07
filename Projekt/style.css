@@ -1,0 +1,410 @@
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #362013, #000000);
+  background-repeat: no-repeat;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: min(13vw, 125px);
+  width: 100%;
+  font-family: "Story Script", sans-serif;
+  color: #a87c7c;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-clip: initial;
+  padding-top: 0px;
+  z-index: 2;
+  transition: background-color 1s ease-in-out;
+}
+
+.top-bar.scrolled {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  font-family: "Story Script", sans-serif;
+  font-size: 22px;
+  color: #a87c7c;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#top-title {
+  padding-left: min(10px, 1%);
+  font-size: 60px;
+  height: 40%;
+}
+
+#logo {
+  height: 100%;
+}
+
+#title-addnot {
+  font-size: 30px;
+  padding-left: 40px;
+}
+
+#menu-bar {
+  margin-top: min(0.4%, 4px);
+  width: 30vw;
+  height: min(12vw, 120px);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 70vw;
+  gap: 5%;
+  z-index: 2;
+}
+
+.icon {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  text-align: center;
+  height: min(4vw, 34px);
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-name {
+  flex-basis: 60%;
+  font-size: min(16px, 2vw);
+  font-family: "Google Sans Code";
+}
+
+.material-symbols-outlined {
+  flex-basis: 10%;
+  font-size: clamp(13px, 3vw, 34px);
+}
+
+.icon:hover {
+  background-color: rgba(47, 47, 47, 0.5);
+  color: white;
+}
+
+#top-image {
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  margin-top: -25%;
+}
+
+#chevron-container {
+  position: absolute;
+  top: 65%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: max(5%, 21px);
+}
+
+.chevron {
+  display: flex;
+  flex-basis: max(2.5%, 24px);
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff78;
+  border-radius: 8px;
+  z-index: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  user-select: none;
+}
+
+.chevron:hover {
+  background-color: #74747478;
+  cursor: pointer;
+}
+
+#slide-image-container {
+  display: flex;
+  justify-content: flex-start;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+#slide-image-container img {
+  object-fit: contain;
+  transform: translateY(20%);
+}
+
+#slide-dots {
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  left: 48%;
+  gap: 10px;
+  z-index: 1;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dot.active {
+  background-color: rgb(234, 234, 234);
+}
+
+#top-info {
+  text-align: center;
+  width: 100%;
+  margin-top: 5%;
+  font-family: "Google Sans Code";
+  color: rgb(255, 255, 255);
+}
+
+#top-info h1 {
+  font-size: 34px;
+  padding-bottom: 3%;
+}
+
+#about-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 40px;
+}
+
+#about-us img {
+  flex-basis: 100%;
+  width: 200px;
+  object-fit: cover;
+}
+
+#about-us p {
+  width: 75%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: max(306px, 45%);
+  background-color: rgba(126, 99, 99, 0.5);
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
+}
+
+.main-content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Story Script";
+  align-items: center;
+  color: white;
+  row-gap: 20px;
+  max-width: 1400px;
+  padding-top: min(200px,17vw);
+}
+
+
+.main-content h1 {
+  background-color: #dbb1b182;
+  border-radius: 6px;
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+}
+
+.main-content > p {
+  background-color: #46373783;
+  font-family: "Google Sans Code";
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 20px 20px 20px 20px;
+}
+
+#cat-looks {
+  background-color: #46373783;
+  color: white;
+  list-style-position: inside;
+  border-radius: 6px;
+  font-family: "Google Sans Code";
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+#cat-looks p {
+  font-family: "Google Sans Code";
+  text-align: center;
+  padding: 20px 20px 5px 20px;
+}
+
+#cat-looks ol {
+  align-self: center;
+  padding-bottom: 10px;
+}
+
+.info {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("https://cat-world.com/wp-content/uploads/2017/06/siberian-cat-1.jpg");
+  background-clip: border-box border-box;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 100px 100px 100px 100px;
+  padding-bottom: 100px;
+  border-radius: 6px;
+}
+
+.single-element{
+    display: flex;
+    flex-direction: column;
+    font-family: "Story Script";
+    align-items: center;
+    color: white;
+    row-gap: 20px;
+    max-width: 1400px;
+    width:95vw;
+    border-radius: 6px;
+    margin-top: min(50px,20vw);
+    margin-bottom: 20px;
+}
+
+.single-element h1 {
+  background-color: #dbb1b182;
+  border-radius: 6px;
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+}
+
+.row-element{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100%;
+}
+
+.row-element p{
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  font-family: "Google Sans Code";
+  border-radius: 6px;
+  padding-bottom: 25px;
+}
+
+.row-element h2{
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  font-family: "Google Sans Code";
+  border-radius: 6px;
+}
+
+#maps{
+    border-radius: 6px;
+    flex-basis: 600px;
+    flex-grow:1;
+    min-width: 0;
+    flex-shrink: 1;
+    border: #dbb1b182 solid;
+    object-fit:contain;
+}
+
+#gallery-cat{
+    border-radius: 6px;
+    flex-basis: 520px;
+    flex-grow:1;
+    min-width: 0;
+    flex-shrink: 1;
+    border: #dbb1b182 solid;
+    object-fit:contain;
+}
+
+#gallery-container{
+  background-color: #a87c7c44;
+  flex-basis:500px;
+  flex-grow: 1;
+  border-radius: 6px;
+}
+
+
+#contact{
+  display: flex;
+  flex-grow:1;
+  flex-basis: 400px;
+  background-color: #a87c7c44;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+
+#contact-footer{
+  background-color: #b1848480;
+  width:100vw;
+  font-family: "Story Script";
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .info {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  #top-title {
+    font-size: clamp(20px, 6vw, 90px);
+  }
+  #title-addnot {
+    font-size: clamp(6px, 3vw, 30px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .info {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1700px) {
+  .single-element{
+     margin-left: 0px !important;
+    margin-right: 0px!important;
+  }
+}
