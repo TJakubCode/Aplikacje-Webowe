@@ -28,7 +28,7 @@ function displayTime() {
   }
 }
 
-const oneSecondInterval = setInterval(() => {
+setInterval(() => {
   if (isRunning) time++;
   displayTime();
 }, 1000);
